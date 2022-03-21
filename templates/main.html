@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block title %} Main page {% endblock %}
+{% block content %} 
+<style>
+    .main{
+        padding: 200px;
+        align-items: center;
+
+    }
+</style>
+<div class="main" >
+    <a href="/physical">
+<button type="button" class="btn btn-dark">Physical </button>
+    </a>
+
+<a href="/mental">
+<button type="button" class="btn btn-dark">Mental </button>
+</a>
+
+</div>
+
+
+
+
+
+{% endblock %}

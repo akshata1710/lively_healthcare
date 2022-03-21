@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+
+{% block title %} Charts {% endblock %}
+
+{%block content%}
+<style>
+    *{
+        background-color: #D4BBDD;
+    }
+.sleep{
+    padding-left:300px;padding-top: 100px;
+    align-items: center;
+
+}.table1{
+    background-color: #6A4973;
+}
+.heading1{
+    
+  text-decoration: underline overline;
+  color: #6A4973;
+  font-weight: bold;
+  font-size: 28px;
+  align-items: center;
+ 
+}
+</style>
+
+<div class="sleep">
+    <h1 class="heading1">
+        ADD Time
+    </h1>
+    <br>
+<form>
+    <table border="2" class="table1">
+        <label for="Sleep">Select a sleeping time:</label>
+        <input type="time" id="num1" name="num1">
+        <br>
+        <br>
+
+        <label for="Sleep">Select a waking time:</label>
+        <input type="time" id="num2" name="num2" >
+        <br>
+
+        {{fm.as_table}}
+    </table>
+    <br>
+    <br>
+    <input type="submit" value="Calc" class="class="btn btn-dark">
+    
+    <br>
+    <br>
+</form>
+{{ msg }}
+{{ ms }}
+
+<a href="/chart">
+    <button type="button" class="btn btn-dark">Charts </button>
+</a>
+
+</div>
+
+
+{%endblock content%}
